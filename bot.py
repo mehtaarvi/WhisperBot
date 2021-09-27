@@ -20,7 +20,7 @@ db = {}
 @bot.on(events.NewMessage(pattern="^[!?/]start$"))
 async def stsrt(event):
     await event.reply(
-            "**Heya, I am a Whisper Bot!**",
+            "**Heya, I am a Whisper Bot deployed by [𝐄𝐕𝐄𝐑𝐄𝐓𝐓](https://t.me/YOUR_DEVIL_DAD)!**",
             buttons=[
                 [Button.switch_inline("Go Inline", query="")]
                 ]
@@ -97,7 +97,7 @@ async def ws(event):
     lol = [int(db["self"])]
     lol.append(user)
     if event.sender.id not in lol:
-        await event.answer("🔐 This message is not for you!", alert=True)
+        await event.answer("🔐THIS massage NOT for you(jaln ho rhi h kya 😂😂😂)!", alert=True)
         return
     msg = db["msg"]
     if msg == []:
