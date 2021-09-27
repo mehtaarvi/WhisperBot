@@ -97,7 +97,7 @@ async def ws(event):
     lol = [int(db["self"])]
     lol.append(user)
     if event.sender.id not in lol:
-        await event.answer("🔐 This message is NOT for you (kyu jalan ho rhi h kya 😂😂)!", alert=True)
+        await event.answer("🔐 This message is NOT for you (𝙠𝙮𝙪  𝙟𝙖𝙡𝙖𝙣 𝙝𝙤 𝙧𝙝𝙞 𝙝 𝙠𝙮𝙖𝙖 𝙩𝙪𝙢𝙠𝙤 😂😂𝑻𝑯𝑶𝑫𝑨  𝑶𝑹 𝑱𝑳𝑶 𝑱𝑳𝑨𝑵𝑬 𝑴𝑬   𝑴𝑱𝑨  𝑨𝑨𝑻𝑨 𝑯. 𝑱𝑰𝑺𝑵𝑬 𝑩𝑯𝑬𝑱𝑨𝑨 𝑯 𝑼𝑺𝑨𝑺𝑬 𝑷𝑶𝑶𝑪𝑯𝑶 𝑴 𝑻𝑶 𝑵𝑯𝑰 𝑩𝑻𝑨𝑵𝑬𝑬 𝑩𝑨𝑳𝑨 𝑻𝑼𝑴𝑲𝑶 😂)!", alert=True)
         return
     msg = db["msg"]
     if msg == []:
