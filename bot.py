@@ -20,7 +20,7 @@ db = {}
 @bot.on(events.NewMessage(pattern="^[!?/]start$"))
 async def stsrt(event):
     await event.reply(
-            "**Heya, I am a Whisper Bot!**",
+            "**𝐇𝐄𝐘 [{}](tg://user?id={})\n 𝐈 𝐀𝐌 𝐀 𝐖𝐇𝐈𝐒𝐏𝐄𝐑 𝐁𝐎𝐓.\n 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐄𝐑 [𝐄𝐕𝐄𝐑𝐄𝐓𝐓](https://t.me/YOUR_DEVIL_DAD)\n\n ..........𝐓𝐇𝐀𝐍𝐊𝐘𝐎𝐔.........!**",
             buttons=[
                 [Button.switch_inline("Go Inline", query="")]
                 ]
@@ -35,7 +35,7 @@ async def die(event):
     dn = event.builder.article(
             title="It's a whisper bot deployed by [𝐄𝐕𝐄𝐑𝐄𝐓𝐓](https://t.me/YOUR_DEVIL_DAD)!",
             description="It's a whisper Bot!\n(c) Reeshuxd",
-            text=f"**It's a whisper bot**\n`@{me} wspr UserID|Message`\n**(c) Reeshuxd**",
+            text=f"**It's a whisper bot**\n`@{me} wspr UserID|Message`\n**[𝐄𝐕𝐄𝐑𝐄𝐓𝐓](https://t.me/YOUR_DEVIL_DAD)**",
             buttons=[
                 [Button.switch_inline(" Go Inline ", query="wspr ")]
                 ]
@@ -71,13 +71,13 @@ async def inline(event):
         return
     db.update({"user_id": ui.user.id, "msg": msg, "self": event.sender.id})
     text = f"""
-A Whisper Has Been Sent
+Ye Mssg bhej diya mene shhshhhah🤫🤫🤫🤫
 To [{ui.user.first_name}](tg://user?id={ui.user.id})!
 Click The Below Button To See The Message!
 **Note:** __Only {ui.user.first_name} can open this!__
     """
     dn = event.builder.article(
-            title="Its a secret message! Sssh",
+            title="Its a secret message! M Kisi ko nahi btaunga 👁",
             description="It's a secret message! Sssh!",
             text=text,
             buttons=[
@@ -86,7 +86,7 @@ Click The Below Button To See The Message!
             )
     await event.answer(
             [dn],
-            switch_pm="It's a secret message! Sssh",
+            switch_pm="It's a secret message! M kisi ko nhi btaunga 👁",
             switch_pm_param="start"
             )
 
