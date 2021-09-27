@@ -33,7 +33,7 @@ async def die(event):
         return
     me = (await bot.get_me()).username
     dn = event.builder.article(
-            title="It's a whisper bot!",
+            title="It's a whisper bot deployed by [𝐄𝐕𝐄𝐑𝐄𝐓𝐓](https://t.me/YOUR_DEVIL_DAD)!",
             description="It's a whisper Bot!\n(c) Reeshuxd",
             text=f"**It's a whisper bot**\n`@{me} wspr UserID|Message`\n**(c) Reeshuxd**",
             buttons=[
@@ -97,7 +97,7 @@ async def ws(event):
     lol = [int(db["self"])]
     lol.append(user)
     if event.sender.id not in lol:
-        await event.answer("🔐 This message is not for you!", alert=True)
+        await event.answer("🔐 This message is NOT for you (kyu jalan ho rhi h kya 😂😂)!", alert=True)
         return
     msg = db["msg"]
     if msg == []:
